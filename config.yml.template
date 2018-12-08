@@ -1,3 +1,4 @@
+
 # Required to connect to your outgoing mail server. Example for using gmail:
 # gmail
 SMTP_SERVER: smtp.gmail.com
@@ -39,4 +40,3 @@ MESSAGE:
   Nothing could possibly go wrong...
   
   http://github.com/underbluewaters/secret-santa
-  

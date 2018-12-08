@@ -1,0 +1,38 @@
+# Required to connect to your outgoing mail server. Example for using gmail:
+# gmail
+SMTP_SERVER: smtp.gmail.com
+SMTP_PORT: 587
+USERNAME: rafnuss@gmail.com
+PASSWORD: "yzbiboeuprlmctdl"
+
+TIMEZONE: 'Europe/Amsterdam'
+
+PARTICIPANTS:
+  - Ameline <ameline1991@hotmail.co.uk>
+  - Benoit <benoitnussbaumer@gmail.com>
+  - Denise <denisenussbaumer@gmail.com>
+  - Joel <nussbaumerjoel@gmail.com>
+  - Pierrick <pitnuss@gmail.com>
+  - Silvain <silnuss@yahoo.fr>
+  - Tom <nussba.tom@gmail.com>
+  - Raphael <rafnuss@gmail.com>
+
+
+# Warning -- if you mess this up you could get an infinite loop
+DONT-PAIR:
+  - Denise, Joel    # Chad and Jen are married
+  - Raphael, Améline # Chad and Bill are best friends
+
+# From address should be the organizer in case participants have any questions
+FROM: Secret Santa <rafnuss@gmail.com>
+
+# Both SUBJECT and MESSAGE can include variable substitution for the
+# "santa" and "santee"
+SUBJECT: Binome pour les petits cadeaux de Noel
+MESSAGE:
+  Salut {santa},
+
+  Cette annee, ton binome de la famille Nuss (Niederhof) pour la fete de Noel sera... {santee}!
+
+  PS Pense a supprimer ou archiver ce message.
+

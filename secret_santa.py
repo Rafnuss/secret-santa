@@ -158,7 +158,7 @@ call with the --send argument:
         for pair in pairs:
             zone = pytz.timezone(config['TIMEZONE'])
             now = zone.localize(datetime.datetime.now())
-            date = now.strftime('%a, %d %b %Y %T %Z') # Sun, 21 Dec 2008 06:25:23 +0000
+            date = now.strftime('%a, %d %b %Y %H:%M:%S %Z') # Sun, 21 Dec 2008 06:25:23 +0000
             message_id = '<%s@%s>' % (str(time.time())+str(random.random()), socket.gethostname())
             frm = config['FROM']
             to = pair.giver.email
